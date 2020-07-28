@@ -21,8 +21,8 @@ extern "C" {
 #include <ArduinoOTA.h>
 
 #ifndef STASSID
-#define STASSID "NOWTVDEXXI_LIVING_ROOM"
-#define STAPSK  "kF4QMhzc3xcS"
+#define STASSID "Enter your SSID"
+#define STAPSK  "Enter your PSWRD"
 #endif
 
 const char* ssid = STASSID;
@@ -87,8 +87,8 @@ void setup()
     Serial.println("HTTP server started");
 
     // Setup and handling for OTA
-    ArduinoOTA.setHostname("Derriston Weather");
-    ArduinoOTA.setPassword("admin120846");
+    ArduinoOTA.setHostname("Enter_Name");
+    ArduinoOTA.setPassword("Password");
     ArduinoOTA.onStart([]() {
       String type;
       if (ArduinoOTA.getCommand() == U_FLASH) {

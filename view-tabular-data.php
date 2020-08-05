@@ -1,23 +1,23 @@
 <html>
 <head>
 <meta http-equiv = 'refresh' content = '30'>
-<title>ESP8266 Derriston Weather Data</title>
+<title>Enter</title>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
 </head>
-<div><center><h1>Derriston Weather</h1></center><div>
+<div><center><h1>Enter</h1></center><div>
 <br>
 <div class='container'>
     
-<center><a href=https://www.envirosample.online/derriston/charts/line-chart-24.php>View latest 24 Hours - Line Graph</a></center>
-<center><a href=https://www.envirosample.online/derriston/charts/line-chart-M.php>View latest Month - Line Graph</a></center>
+<center><a href=https://Enter.php>View latest 24 Hours - Line Graph</a></center>
+<center><a href=https://Enter.php>View latest Month - Line Graph</a></center>
 <br><br>
 
 <?php
 // Connection data (server_address, database, name, password)
 $servername = "localhost";
-$dbname = "u610815376_derriston";
-$username = "u610815376_derristonBoss";
-$password = "|n1ED~Gcj";
+$dbname = "Enter";
+$username = "Enter";
+$password = "Enter";
 
 try {
   // Connect and create the PDO object

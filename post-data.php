@@ -2,15 +2,15 @@
 
 $servername = "localhost";
 
-$dbname = "u610815376_derriston";
+$dbname = "Enter";
 
-$username = "u610815376_derristonBoss";
+$username = "Enter";
 
-$password = "|n1ED~Gcj";
+$password = "Enter";
 
 // Keep this API Key value to be compatible with the ESP32 code provided in the project page. 
 // If you change this value, the ESP32 sketch needs to match
-$api_key_value = "tPmAT5Ab3j7F9";
+$api_key_value = "Enter";
 
 $api_key = $sensor = $location = $Temperature = $Humidity = $Pressure = $WindSpeed = "";
 // Create connection - uncomment for debug

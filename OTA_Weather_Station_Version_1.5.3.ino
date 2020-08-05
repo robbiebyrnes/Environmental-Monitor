@@ -7,6 +7,7 @@
 // calculateWS() and millis() interrupt for sending HTTP post to external server - server always returns error if calling from another sdk interrupt
 // This version uses ESPWebserver to send string/html to local IP including 30 minute updates to web based server
 // Version 1.5.3 includes bug fix for BME280 crashing (in handle_OnConnect()) also a catch routine in void loop ()
+// Thanks to lastminuteengineers.com and randomnerdtutorials.com for help with parts of the project 
 
 extern "C" {
 #include "user_interface.h"
@@ -25,25 +26,25 @@ extern "C" {
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 #ifndef STASSID
-#define STASSID "NOWTVDEXXI_LIVING_ROOM"
-#define STAPSK  "kF4QMhzc3xcS"
+#define STASSID "Enter SSID"
+#define STAPSK  "Enter Password"
 #endif
 const char* ssid = STASSID;
 const char* password = STAPSK;
 // End of OTA section
 
 // The following section is for posting data to domain/server/database/php script
-const char* serverName = "http://www.envirosample.online/derriston/post-data.php";
-String apiKeyValue = "tPmAT5Ab3j7F9"; // Must match API key in post-data.php
-String sensorName = "Derriston";
-String sensorLocation = "Crediton";
+const char* serverName = "enter server name";
+String apiKeyValue = "enter API key"; // Must match API key in post-data.php
+String sensorName = "Choose sensor name";
+String sensorLocation = "Choose location";
 unsigned long lastTime = 0;
 unsigned long timerDelay = 1800000;
 // End
 
 // The following section is for weather station
 // For BME280
-#define SEALEVELPRESSURE_HPA (1013.25)
+// #define SEALEVELPRESSURE_HPA (1013.25) // uncomment if using altitude calculation
 Adafruit_BME280 bme; // instantiate object
 float temperature, humidity, pressure;
 //float altitude; // uncomment if using altitude calculation
@@ -100,8 +101,8 @@ void setup()
   Serial.println("HTTP server started");
 
   // Setup and handling for OTA
-  ArduinoOTA.setHostname("Derriston Weather");
-  ArduinoOTA.setPassword("admin120846");
+  ArduinoOTA.setHostname("Choose device name");
+  ArduinoOTA.setPassword("Choose upload password");
   ArduinoOTA.onStart([]() {
     String type;
     if (ArduinoOTA.getCommand() == U_FLASH) {
@@ -184,7 +185,7 @@ void calculateWS(void *pArg)
   RPS = RPS / 5;
   windspeed = RPS * rotaryTravel;
   WINDSPEED = windspeed;
-  Serial.println("Hello from calculateWS()");
+  // Serial.println("Hello from calculateWS()");
   revolutions = 0;
   windspeed = 0.0;
 }

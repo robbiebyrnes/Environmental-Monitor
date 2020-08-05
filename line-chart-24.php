@@ -1,7 +1,7 @@
 <!doctype html public "-//w3c//dtd html 3.2//en">
 <html>
 <head>
-<title>Derriston Weather Station: Multi Variable Line Chart</title>
+<title>Enter</title>
 </head>
 <body >
 <?Php
@@ -28,8 +28,8 @@ echo "<script>
 
 <center><div id="curve_chart"></div></center>
 <br><br>
-<center><a href=https://www.envirosample.online/derriston/charts/line-chart-M.php>View lestest Month</a></center>
-<center><a href=https://www.envirosample.online/derriston/view-tabular-data.php>View Current Readings Table</a></center>
+<center><a href=https://Enter.php>View lestest Month</a></center>
+<center><a href=https://Enter.php>View Current Readings Table</a></center>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
@@ -50,7 +50,7 @@ echo "<script>
         data.addRow([Multi_Var[i][0],parseInt(Multi_Var[i][1]),parseInt(Multi_Var[i][2]),parseInt(Multi_Var[i][3])]);
      
         var options = {
-        title: 'Derriston Weather Station - Temperature, Humidity & Wind Speed - latest 24 Hours',
+        title: 'Enter - Temperature, Humidity & Wind Speed - latest 24 Hours',
         //titleTextStyle: {
         //color: <string>,    // any HTML string color ('red', '#cc00cc')
         //fontName: <string>, // i.e. 'Times New Roman'

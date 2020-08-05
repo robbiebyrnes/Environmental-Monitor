@@ -1,7 +1,7 @@
 <!doctype html public "-//w3c//dtd html 3.2//en">
 <html>
 <head>
-<title>Derriston Weather Station: Multi Variable Line Chart</title>
+<title>Enter: Multi Variable Line Chart</title>
 </head>
 <body >
 <?Php
@@ -28,8 +28,8 @@ echo "<script>
 
 <center><div id="curve_chart"></div></center>
 <br><br>
-<center><a href=https://www.envirosample.online/derriston/charts/line-chart-24.php>View latest 24 Hours</a></center>
-<center><a href=https://www.envirosample.online/derriston/view-tabular-data.php>View Current Readings Table</a></center>
+<center><a href=https://Enter.php>View latest 24 Hours</a></center>
+<center><a href=https://Enter.php>View Current Readings Table</a></center>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">

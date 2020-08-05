@@ -1,13 +1,13 @@
 <?php
 
-$servername = "localhost";
+$servername = "Enter";
 
 // REPLACE with your Database name
-$dbname = "u610815376_derriston";
+$dbname = "Enter";
 // REPLACE with Database user
-$username = "u610815376_derristonBoss";
+$username = "Enter";
 // REPLACE with Database user password
-$password = "|n1ED~Gcj";
+$password = "Enter";
 
 
 //error_reporting(0);// With this no error reporting will be there
